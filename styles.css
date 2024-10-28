@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+	font-family: "nordic";
+	src: url(fonts/Norse-Bold.otf);
+}
+
+@font-face {
+	font-family: "montserrat";
+	src: url(fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+
+}
+
+.left{
+	background-image: url(images/leaves.jpg);
+	background-size: cover;
+	width: 40%;
+	
+
+}
+.logo{
+
+	position: relative;
+	color: white;
+	font-family: "nordic";
+	font-size: 80px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	top: 200px;
+
+	padding: 10px 0;
+	background-color: #0000008c;
+
+}
+
+.logo > img{
+	height: 100px;
+}
+
+.right{
+	width: auto;
+
+	font-family: "montserrat";
+	
+	width: 60%;
+}
+
+.right > p{
+	font-size: 16px;
+	font-weight: 600;
+	width: 600px;
+
+	padding: 70px 0 30px 30px;
+	
+	
+}
+
+
+
+.right > form {
+	background-color: #F9FAFB;
+	box-shadow: 0 1px 3px #0000005c;
+	
+	width: auto;
+
+	padding: 15px 0 10px 30px;
+}
+
+.right > form > h2{
+	margin-bottom: 12px;
+}
+
+label{
+	font-size: 8px;
+	font-weight: 600;
+	margin-bottom: 2px;
+	color: #000000ac;
+}
+
+.line{
+	display: flex;
+	flex-direction: row;
+
+	gap: 50px;
+
+	margin-bottom: 10px;
+}
+.input-group{
+	display: flex;
+	flex-direction: column;
+}
+
+.right > button {
+	background-color: #596D48;
+
+	border: none;
+	border-radius: 5px;
+
+	color: white;
+	font-weight: 700;
+
+	padding: 10px 40px;
+	margin: 30px 0 30px 30px;
+
+	cursor: pointer;
+}
+
+.login-div{
+	margin-left: 30px;
+	font-size: 12px;
+
+}
+
+.login-div span{
+	color: #596D48;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+input{
+	
+	border: 1px solid grey
+
+}
+
+input:valid{
+	border: 1.5px solid rgb(47, 255, 50);
+}
+
+input:focus{
+	border: 1.5px solid #2f5cff;
+	outline: none;
+}
+
+input:user-invalid{
+	border: 1.5px solid red;
+}
