@@ -25,11 +25,11 @@
                     <div class="line">
                         <div class="first-name input-group">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name" required pattern="[a-zA-Z]">
+                            <input type="text" name="first-name" id="first-name" required pattern="[a-zA-Z]{1,22}">
                         </div>
                         <div class="last-name  input-group">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name" required pwattern="[a-zA-Z]">
+                            <input type="text" name="last-name" id="last-name" required pattern="[a-zA-Z]{1,22}">
                         </div>
                     </div>
                     <div class="line">
@@ -50,12 +50,12 @@
                         <div class="line">
                             <div class="password input-group">
                                 <label for="password">PASSWORD</label>
-                                <input type="text" name="password" id="password" required>
+                                <input type="password" name="password" id="password" required>
                             </div>
         
                             <div class="last-name  input-group">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="text" name="confirm-password" id="confirm-password" required>
+                                <input type="password" name="confirm-password" id="confirm-password" required>
                             </div>
         
                         </div>
